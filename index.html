@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="cars">Modelo de auto</label>
+    <select name="cars" id="cars" onchange="descuentoAutos()">
+        <option>Seleccione un modelo...</option>
+        <option value="Ford Fiesta">Ford Fiesta</option>
+        <option value="Ford Focus">Ford Focus</option>
+        <option value="Ford Escape">Ford Escape</option>
+    </select>
+
+    <p id="autoSeleccionado"></p>
+    <br><br>
+
+    <img src="https://res.cloudinary.com/dbl4ugndy/image/upload/v1700763132/pngwing.com_fwylzk.png" alt="avion" width="50" height="50">
+    <br>
+
+    <label>Ciudad de origen</label>
+    <input type="text" name="" id="originCity" placeholder="Desde...">
+    <label>Ciudad de destino</label>
+    <input type="text" name="" id="destinationCity" placeholder="Hasta...">
+    <br>
+    <button onclick="discountTrip()">Calcula tu viaje</button>
+
+    <div id="mostrarResultado"></div>
+    <br><br>
+
+    <label>Turno de la mañana</label>
+    <input type="text" onchange="agregarElementosManana()" id="edadesManana" placeholder="Escribe 5 edades">
+    
+    <br>
+
+    <label>Turno de la tarde</label>
+    <input type="text" onchange="agregarElementosTarde()" id="edadesTarde" placeholder="Escribe 6 edades">
+
+    <br>
+
+    <label>Turno de la noche</label>
+    <input type="text" onchange="agregarElementosNoche()" id="edadesNoche" placeholder="Escribe 11 edades">
+    <br>
+    <button onclick="calcularPromedioEdades()">Promedio de edades</button>
+    <br>
+    <div id="resultadoMostrado"></div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
